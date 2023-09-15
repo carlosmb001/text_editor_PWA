@@ -18,21 +18,30 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './index.html',
+        title: 'Text Editor'
       }),
+      // Injects our custom service worker
       new InjectManifest({
-        swSrc: './src/src-sw.js', 
+        swSrc: './src-sw.js', 
+        swDest: 'src-sw.js',
       }),
+
+       // Creates a manifest.json file
       new WebpackPwaManifest({
-        name: 'Your App Name',
-        short_name: 'App',
-        description: 'Your App Description',
+        name: 'Text Editor',
+        short_name: 'Text Editor',
+        description: 'Text Editor',
         background_color: '#ffffff',
+        start_url: './',
+        publicPath: './',
         icons: [ 
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512]
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
           },
         ]
       })
