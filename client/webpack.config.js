@@ -32,7 +32,7 @@ module.exports = () => {
         inject: true,
         name: 'JATE',
         short_name: 'JATE',
-        description: 'test-editor',
+        description: 'JATE',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',

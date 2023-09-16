@@ -37,4 +37,6 @@ registerRoute(({ request }) => ['style', 'script', 'worker'].includes(request.de
     ],
   })
 );
+
+offlineFallback();
 registerRoute();
