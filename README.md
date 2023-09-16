@@ -1,5 +1,6 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# Progressive Web Application (PWA): Text Editor 🚀
+  <img style="display: block; margin-left: auto; margin-right: auto;" src="assets/JATE_logo.png">
+  
+# Progressive Web Application (PWA): Text Editor
 ## 🌟 Description
 Step into the future of web apps with this robust Text Editor crafted to meet the standards of Progressive Web Applications (PWA). With an emphasis on offline reliability and efficient data storage, this editor ensures that your notes and code snippets are securely saved and easily accessible. This application makes use of cutting-edge technologies such as the idb package for data management and features a streamlined deployment process for Heroku.
 ## 📜 User Story
@@ -46,18 +47,19 @@ Begin creating notes or code snippets.
 Experience the reliability of data storage and offline capabilities.
 
 ## 💻 Technologies Used
-Node.js
-Express.js
-IndexedDB
-idb package
-Webpack
-Workbox
+[Node.js](https://nodejs.org/en)
+[Express.js](https://expressjs.com/)
+[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+[idb package](https://www.npmjs.com/package/idb)
+[Webpack](https://webpack.js.org/)
+[Workbox](https://developers.google.com/web/tools/workbox)
 
 ## 🌍 Deployment
 <a href="https://text-editor-pwa-cmb-953d51a916c2.herokuapp.com"><img src="assets/JATE.png" alt="Website Preview"></a>
 
 ## 📄 License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This project uses the MIT license.
 
-👏 Acknowledgements
-To all open-source tools and libraries that made this project possible, and to the community for the continuous support and inspiration.
+## 👏 Acknowledgements
+edX Boot Camps LLC for the project prompt and resources.
