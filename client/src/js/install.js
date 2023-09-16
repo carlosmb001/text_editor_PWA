@@ -6,15 +6,15 @@ window.addEventListener('beforeinstallprompt', (event) => {
     // Stash the event so it can be triggered later.
     window.deferredPrompt = event;
     // Update the install button's display
-  butInstall.classList.toggle = ('hidden',false);
+    butInstall.style.display = 'block';
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
-    // Hide the app provided install promotion
-    butInstall.classList.toggle('hidden', true);
-    
-    // Show the install prompt
+    // Hide our user interface that shows the "Install" button
+   butInstall.style.display = 'none';
+
+  // Show the install prompt
     const promptEvent = window.deferredPrompt;
 if (!promptEvent) {
     return;
