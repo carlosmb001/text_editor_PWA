@@ -46,12 +46,12 @@ export const getDb = async () => {
   const store = tx.objectStore('jate');
 
   // Use the .get method to data in the database.
-  const request = store.get();
+  const request = store.get(1);
 
   // Get confirmation of the request.
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result?.value;
 };
 
 initdb();
