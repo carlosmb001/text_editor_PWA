@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: center; align-items: center;">
+<div style="display: flex; justify-content: center;">
     <img src="assets/JATE_logo.png">
 </div>
 
